@@ -69,7 +69,13 @@ const App = () => {
     }
   };
 
+  const calculateTotalAmount = () => {
+    const totalAmount = expenses.reduce((acc, expense) => {
+      return expense.type === 'expense' ? acc - expense.amount : acc + expense.amount;
+    }, 0);
 
+    return totalAmount.toFixed(2);
+  };
 
   return (
     <div className="app-container">
@@ -138,7 +144,12 @@ const App = () => {
             ))}
           </tbody>
         </table>
-
+        <div className="total-amount-container">
+          <h2>Total Amount</h2>
+          <p className={calculateTotalAmount() >= 0 ? 'positive' : 'negative'}>
+            {calculateTotalAmount()}
+          </p>
+        </div>
       </div>
       <div className="app-description">
         <h2>App Description</h2>
