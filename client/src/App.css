@@ -40,3 +40,127 @@
 .read-the-docs {
   color: #888;
 }
+/* My App */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  width: 800px;
+  margin: auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-expense-container {
+  margin-bottom: 20px;
+}
+
+.add-expense-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.add-expense-container input,
+.add-expense-container select,
+.add-expense-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-expense-container button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-expense-container button:hover {
+  background-color: #0056b3;
+}
+
+.expenses-container {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expenses-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.expenses-container button {
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.expenses-container button:hover {
+  background-color: #c82333;
+}
+
+.total-amount-container {
+  margin-top: 20px;
+}
+
+.total-amount-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.positive {
+  color: #28a745;
+}
+
+.negative {
+  color: #dc3545;
+}
+
+.app-description {
+  margin-top: 20px;
+}
+
+.app-description h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.app-description p {
+  color: #666;
+}
